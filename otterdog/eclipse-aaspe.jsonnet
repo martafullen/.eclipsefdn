@@ -24,7 +24,7 @@ orgs.newOrg('eclipse-aaspe') {
     orgs.newRepo('aaspe') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "AW/i4AASImportExport",
+      default_branch: "main",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: "AASX Package Explorer",
