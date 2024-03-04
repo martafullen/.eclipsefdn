@@ -48,8 +48,8 @@ orgs.newOrg('eclipse-aaspe') {
       dependabot_security_updates_enabled: true,
       description: "C# based server for AASX packages",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
       topics+: [
         "aasx",
         "aasx-server",
