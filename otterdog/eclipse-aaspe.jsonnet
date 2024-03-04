@@ -48,8 +48,6 @@ orgs.newOrg('eclipse-aaspe') {
       dependabot_security_updates_enabled: true,
       description: "C# based server for AASX packages",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "aasx",
         "aasx-server",
@@ -94,6 +92,17 @@ orgs.newOrg('eclipse-aaspe') {
       has_wiki: false,
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
+    orgs.newRepo('aaspe-common') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "aaspe common components",
+      has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
