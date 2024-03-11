@@ -28,6 +28,17 @@ orgs.newOrg('eclipse-aaspe') {
         },
       ],
     },
+    orgs.newRepo('aaspe-common') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "aaspe common components",
+      has_wiki: false,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('aasx-server') {
       allow_rebase_merge: false,
       allow_update_branch: false,
@@ -70,17 +81,6 @@ orgs.newOrg('eclipse-aaspe') {
           requires_pull_request: false,
         },
       ],
-    },
-    orgs.newRepo('aaspe-common') {
-      allow_merge_commit: true,
-      allow_update_branch: false,
-      delete_branch_on_merge: false,
-      description: "aaspe common components",
-      has_wiki: false,
-      web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
     },
   ],
 }
