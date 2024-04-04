@@ -5,7 +5,6 @@ orgs.newOrg('eclipse-aaspe') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "C# based viewer & editor for the Asset Administration Shell",
     name: "Eclipse AASX Package Explorer",
-    readers_can_create_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
